@@ -1,0 +1,88 @@
+.game-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.status {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.control-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.reset-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.board-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  /* 3 boards per row */
+  gap: 10px;
+  /* space between boards */
+  justify-content: center;
+  /* center the row */
+  padding: 10px;
+}
+
+.superboard {
+  display: grid;
+  justify-content: center;
+  /* center the row */
+}
+
+.tic-tac-toe {
+  background-color: whitesmoke;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 equal-width columns */
+  width: fit-content;
+  /* only as wide as needed */
+  gap: 4px;
+  /* space between squares */
+  padding: 5px;
+  position: relative;
+  /* Required for overlay positioning */
+}
+
+.tic-tac-toe.active {
+  border: 2px solid limegreen;
+}
+
+.board-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.7);
+  font-size: 4rem;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  user-select: none;
+  border-radius: 8px;
+}
+
+.square {
+  height: 50px;
+  width: 50px;
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0px;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
