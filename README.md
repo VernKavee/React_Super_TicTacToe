@@ -1,3 +1,8 @@
+# This is my first React project
+it's based on this youtube clip
+
+https://youtu.be/_Na3a1ZrX7c?si=2FtMiCh90OfoIoRy
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
