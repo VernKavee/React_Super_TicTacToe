@@ -20,6 +20,7 @@ function Super() {
 
     // Case 1: Game finished (i === null)
     if (i === null) {
+      console.log(nextDisabledTable);
       setTableDisabled(nextDisabledTable); // all true = disable all
       return;
     }
@@ -108,7 +109,7 @@ function Super() {
       status = "Winner by tiebreak: " + tiebreakWinner;
     }
   } else {
-    status = "Next player: " + (xIsNext ? "X" : "O");
+    status = "Current Player: " + (xIsNext ? "X" : "O");
   }
 
   // Reset game function
